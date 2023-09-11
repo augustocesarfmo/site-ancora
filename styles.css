@@ -79,3 +79,50 @@ header .header-profile>.avatar-img {
   border-radius: 7px;
   font-weight: 700;
 }
+
+/* section about me */
+
+.section-about-me {
+  background-color: #f7f7f7;
+  display: block;
+  text-align: center;
+  padding: 10% 5%;
+}
+
+.section-about-me>h2 {
+  margin-bottom: 40px;
+}
+
+.section-about-me>p {
+  color: #777;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.section-about-me-content {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  text-align: initial;
+}
+
+.section-about-me-content h3 {
+  margin-bottom: 30px;
+}
+
+.section-about-me-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-about-me-content ul>li {
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #777;
+}
