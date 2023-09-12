@@ -16,6 +16,24 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.btn {
+  background: #0062b9;
+  color: #fff;
+  padding: 1.2rem 3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
 header,
 main,
 footer {}
@@ -90,6 +108,7 @@ header .header-profile>.avatar-img {
 }
 
 .section-about-me>h2 {
+  position: relative;
   margin-bottom: 40px;
 }
 
@@ -125,4 +144,16 @@ header .header-profile>.avatar-img {
   border-radius: 5px;
   font-weight: 600;
   color: #777;
+}
+
+.section-about-me>h2::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 2rem;
+  background: #0062b9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
 }
