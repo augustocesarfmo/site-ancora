@@ -44,6 +44,7 @@ body {
   margin: auto;
   line-height: 1.6;
   text-align: center;
+  margin: 0px 150px;
 }
 
 .paragraph {
@@ -89,7 +90,7 @@ h2::after {
 
 h3 {
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 /* header */
@@ -125,8 +126,13 @@ header .header-profile>.avatar-img {
 }
 
 .section-home {
-  background-color: #437ec3;
-  padding: 15% 5%;
+  background: linear-gradient(to right,
+      rgba(0, 98, 185, 0.8),
+      rgba(0, 98, 185, 0.8)),
+    url(./assets/common-bg.svg);
+  background-position: center;
+
+  padding: 15% 10%;
   align-items: center;
   display: grid;
   grid-template-rows: auto auto auto;
@@ -135,25 +141,20 @@ header .header-profile>.avatar-img {
   color: white;
 }
 
+/* section home */
+
 .section-home>p {
   color: #fff;
   font-size: 1.6rem;
-  text-align: center;
-  width: 100%;
   line-height: 1.6;
+  margin: 0px 50px;
 }
 
-.section-home>.btn {
-  display: flex;
-  justify-content: center;
-}
-
-.section-home>.btn>a {
+.section-home .btn {
   background-color: white;
   color: black;
-  padding: 20px 70px;
-  border-radius: 7px;
-  font-weight: 700;
+  padding: 1.4rem 6rem;
+  font-size: 1.2rem;
 }
 
 /* section about me */
@@ -162,10 +163,6 @@ header .header-profile>.avatar-img {
   background-color: #f7f7f7;
   display: block;
   text-align: center;
-}
-
-.section-about-me>p {
-  margin: 0px 150px;
 }
 
 .section-about-me-content {
@@ -193,4 +190,29 @@ header .header-profile>.avatar-img {
   border-radius: 5px;
   font-weight: 600;
   color: #777;
+}
+
+/* section projects */
+
+.section-projects>ul li {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  column-gap: 50px;
+  margin-bottom: 2px;
+}
+
+.section-projects .project-content {
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section-projects ul {
+  margin-top: 100px;
+}
+
+.section-projects ul li+li {
+  margin-top: 50px;
 }
