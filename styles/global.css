@@ -21,7 +21,7 @@ a {
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr 200px;
+  grid-template-rows: auto 1fr auto;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -98,6 +98,12 @@ h2::after {
 h3 {
   font-weight: 700;
   font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* header */
@@ -284,4 +290,45 @@ textarea {
 
 form button {
   align-self: flex-end;
+}
+
+/* footer */
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 0px 8%;
+}
+
+footer>.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 7% 0;
+}
+
+.footer-top h4 {
+  margin-bottom: 1.6rem;
+}
+
+.footer-top>div:first-child {
+  width: 40%;
+}
+
+.footer-top p {
+  color: #eee;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.footer-top i {
+  font-size: 1.6rem;
+  padding: 0rem 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  padding: 2.6rem 0;
+  font-size: 0.7rem;
 }
