@@ -21,16 +21,18 @@
 
     <nav>
       <ul>
-        <li><a href="teste">HOME</a></li> <!-- TODO: uppercase -->
+        <li><a href="#section-home">HOME</a></li> <!-- TODO: uppercase -->
         <li><a href="#section-about-me">ABOUT</a></li>
         <li><a href="#section-projects">PROJECTS</a></li>
-        <li><a href="teste">CONTACT</a></li>
+        <li><a href="#section-contact">CONTACT</a></li>
       </ul>
     </nav>
+
+    <i class="fa fa-bars" aria-hidden="true"></i>
   </header>
 
   <main>
-    <section class="section section-home">
+    <section class="section section-home" id="section-home">
       <h1>OLÁ, MEU NOME É AUGUSTO CÉSAR</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius
         sapiente solutions for complex problems</p>
@@ -58,7 +60,6 @@
             mobile apps in
             different industries and verticals. Feel free to contact me here.</p>
           <a href="" class="btn" style="margin-top: 30px;">contact</a>
-          <a href="" class="btn">Teste</a>
         </div>
 
         <div>
@@ -123,7 +124,8 @@
         </li>
       </ul>
     </section>
-    <section id="section-contact" class="section section-contact">
+
+    <section class="section section-contact" id="section-contact">
       <h2>Contact</h2>
       <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae
         quod deserunt eius sapiente</p>
@@ -146,7 +148,7 @@
           <label for="message">
             Mensagem:
           </label>
-          <textarea required="" cols="30" rows="10" placeholder="Digite sua mensagem" name="message"></textarea>
+          <textarea required="" rows="10" placeholder="Digite sua mensagem" name="message"></textarea>
         </div>
 
         <button type="submit" class="btn">Submit</button>

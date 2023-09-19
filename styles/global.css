@@ -4,6 +4,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 textarea {
   resize: none;
 }
@@ -29,7 +33,7 @@ body {
   background: #0062b9;
   color: #fff;
   padding: 1.2rem 3rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
@@ -115,6 +119,10 @@ header {
   font-weight: 700;
 }
 
+header i {
+  display: none !important;
+}
+
 nav>ul {
   display: flex;
 }
@@ -166,8 +174,8 @@ header .header-profile>.avatar-img {
 .section-home .btn {
   background-color: white;
   color: black;
-  padding: 1.4rem 6rem;
-  font-size: 1.2rem;
+  padding: 1.4rem 4rem;
+  font-size: 1rem;
 }
 
 /* section about me */
@@ -239,7 +247,8 @@ header .header-profile>.avatar-img {
       rgba(0, 98, 185, 0.8)),
     url(../assets/common-bg.svg);
   background-position: center;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .section-contact>h2,
@@ -303,7 +312,7 @@ footer {
 footer>.footer-top {
   display: flex;
   justify-content: space-between;
-  padding: 7% 0;
+  padding: 3rem 0;
 }
 
 .footer-top h4 {
@@ -331,4 +340,86 @@ footer>.footer-top {
   justify-content: center;
   padding: 2.6rem 0;
   font-size: 0.7rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 0px 0px;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.0rem;
+  }
+
+  header>nav {
+    display: none;
+  }
+
+  header i {
+    display: block !important;
+  }
+
+  .section-home>p {
+    margin: 0px;
+    font-size: 1.2rem;
+  }
+
+  .section-about-me-content {
+    /* Change number of columns */
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .section-projects>ul li {
+    /* Change number of columns */
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+  }
+
+  .section-projects .project-content {
+    /* Center objects */
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-contact>form {
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .section-contact input,
+  textarea {
+    color: #333;
+    font-size: 0.8rem;
+  }
+
+  footer>.footer-top {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .footer-top>div:first-child {
+    width: auto;
+  }
 }
