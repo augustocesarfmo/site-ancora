@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
+  box-sizing: border-box;
 }
 
 html {
@@ -27,6 +28,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
 }
 
 .btn {
@@ -117,10 +119,14 @@ header {
   justify-content: space-between;
   padding: 0px 30px;
   font-weight: 700;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
 }
 
-header i {
-  display: none !important;
+header .fa {
+  display: none;
 }
 
 nav>ul {
@@ -146,6 +152,8 @@ header .header-profile>.avatar-img {
   align-items: center;
 }
 
+/* section home */
+
 .section-home {
   background: linear-gradient(to right,
       rgba(0, 98, 185, 0.8),
@@ -154,6 +162,7 @@ header .header-profile>.avatar-img {
   background-position: center;
 
   padding: 15% 10%;
+  padding-top: calc(15% + 90px);
   align-items: center;
   display: grid;
   grid-template-rows: auto auto auto;
@@ -161,8 +170,6 @@ header .header-profile>.avatar-img {
   text-align: center;
   color: white;
 }
-
-/* section home */
 
 .section-home>p {
   color: #fff;
@@ -373,8 +380,12 @@ footer>.footer-top {
     display: none;
   }
 
-  header i {
-    display: block !important;
+  header .fa {
+    display: block;
+    font-size: 1.8rem;
+    padding: 30px 20px;
+    align-self: center;
+    cursor: pointer;
   }
 
   .section-home>p {
@@ -413,6 +424,10 @@ footer>.footer-top {
     font-size: 0.8rem;
   }
 
+  form button {
+    align-self: stretch;
+  }
+
   footer>.footer-top {
     display: flex;
     flex-direction: column-reverse;
@@ -422,4 +437,6 @@ footer>.footer-top {
   .footer-top>div:first-child {
     width: auto;
   }
+
+
 }
