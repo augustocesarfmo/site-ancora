@@ -1,0 +1,41 @@
+@use "../theme";
+
+/* section home */
+.section-home {
+  background: linear-gradient(
+      to right,
+      rgba(theme.$primary-color, 0.8),
+      rgba(theme.$primary-color, 0.8)
+    ),
+    url(../assets/common-bg.svg);
+  background-position: center;
+
+  padding-top: calc(12rem + 4.5rem) !important;
+  padding-bottom: 12rem !important;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 50px;
+  text-align: center;
+  color: white;
+}
+
+.section-home {
+  h1 {
+    text-transform: uppercase;
+  }
+
+  > p {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0px 50px;
+  }
+
+  .btn {
+    background-color: white;
+    color: black;
+    padding: 1.4rem 5rem;
+    font-size: 1.1rem;
+  }
+}

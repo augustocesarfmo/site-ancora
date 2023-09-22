@@ -1,0 +1,95 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+
+  .section {
+    padding: 10rem 1.4rem;
+  }
+
+  .subtitle {
+    margin: 0px 0px;
+  }
+
+  header {
+    nav {
+      display: none;
+    }
+  }
+
+  header {
+    padding: 0px 2rem;
+
+    .fa {
+      display: block;
+      font-size: 1.8rem;
+      padding: 2.2rem 1rem;
+      align-self: center;
+      cursor: pointer;
+    }
+  }
+
+  .section-home {
+    p {
+      margin: 0px;
+    }
+  }
+
+  .section-about-me-content {
+    /* Change number of columns */
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .section-projects {
+    ul li {
+      /* Change number of columns */
+      grid-template-columns: 1fr;
+      row-gap: 1.6rem;
+    }
+
+    .project-content {
+      /* Center objects */
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .section-contact {
+    form {
+      padding: 2rem;
+      margin-left: 0.6rem;
+      margin-right: 0.6rem;
+    }
+
+    input,
+    textarea {
+      color: #333;
+    }
+
+    button {
+      align-self: stretch;
+      font-size: 0.9rem;
+      // padding-top: 1.4rem;
+      // padding-bottom: 1.4rem;
+    }
+  }
+
+  footer {
+    padding: 0px 1.6rem;
+
+    .footer-top {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
+  }
+
+  .footer-top {
+    > div:first-child {
+      width: auto;
+    }
+  }
+}

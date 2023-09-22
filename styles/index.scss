@@ -1,0 +1,16 @@
+@use "global";
+
+// header
+@use "./components/header";
+
+// sections
+@use "./sections/section-home";
+@use "./sections/section-about-me";
+@use "./sections/section-projects";
+@use "./sections/section-contact";
+
+// footer
+@use "./components/footer";
+
+// Resposive styles
+@use "mobile";

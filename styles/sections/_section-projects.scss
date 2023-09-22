@@ -1,0 +1,25 @@
+/* section projects */
+.section-projects ul {
+  margin-top: 100px;
+}
+
+.section-projects {
+  > ul li {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    column-gap: 50px;
+    margin-bottom: 2px;
+  }
+
+  .project-content {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.section-projects ul li + li {
+  margin-top: 50px;
+}

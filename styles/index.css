@@ -27,14 +27,14 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   position: relative;
 }
 
 .btn {
-  background: #0062b9;
+  background: purple;
   color: #fff;
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 3.2rem;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -42,7 +42,7 @@ body {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .btn:hover {
@@ -68,11 +68,11 @@ body {
 }
 
 .section {
-  padding: 10% 5%;
+  padding: 10rem 5rem;
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
@@ -90,12 +90,12 @@ h2 {
 }
 
 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 2rem;
-  background: #0062b9;
+  background: purple;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -113,11 +113,10 @@ h4 {
 }
 
 /* header */
-
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding: 0px 3rem;
   font-weight: 700;
   position: fixed;
   width: 100%;
@@ -129,40 +128,41 @@ header .fa {
   display: none;
 }
 
-nav>ul {
+nav > ul {
   display: flex;
 }
 
-nav>ul a {
+nav > ul a {
   display: block;
-  padding: 35px 20px;
+  padding: 2rem 1.8rem;
+  transition: color 0.2s;
+  text-transform: uppercase;
+}
+nav > ul a:hover {
+  color: purple;
 }
 
-header .header-profile>.avatar-img {
-  width: 40px;
-  height: 40px;
-  border: 1px solid black;
+.header-profile-container {
+  display: flex;
+  align-items: center;
+}
+.header-profile-container .avatar-img {
+  width: 3.3rem;
+  height: 3.3rem;
   border-radius: 50%;
   margin-right: 15px;
   overflow: hidden;
 }
-
-.header-profile {
-  display: flex;
-  align-items: center;
+.header-profile-container > span {
+  text-transform: uppercase;
 }
 
 /* section home */
-
 .section-home {
-  background: linear-gradient(to right,
-      rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)),
-    url(../assets/common-bg.svg);
+  background: linear-gradient(to right, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0.8)), url(../assets/common-bg.svg);
   background-position: center;
-
-  padding: 15% 10%;
-  padding-top: calc(15% + 90px);
+  padding-top: 16.5rem !important;
+  padding-bottom: 12rem !important;
   align-items: center;
   display: grid;
   grid-template-rows: auto auto auto;
@@ -171,22 +171,23 @@ header .header-profile>.avatar-img {
   color: white;
 }
 
-.section-home>p {
+.section-home h1 {
+  text-transform: uppercase;
+}
+.section-home > p {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.6;
   margin: 0px 50px;
 }
-
 .section-home .btn {
   background-color: white;
   color: black;
-  padding: 1.4rem 4rem;
-  font-size: 1rem;
+  padding: 1.4rem 5rem;
+  font-size: 1.1rem;
 }
 
 /* section about me */
-
 .section-about-me {
   background-color: #f7f7f7;
   display: block;
@@ -197,7 +198,8 @@ header .header-profile>.avatar-img {
   margin-top: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
   text-align: initial;
 }
 
@@ -210,7 +212,7 @@ header .header-profile>.avatar-img {
   flex-wrap: wrap;
 }
 
-.section-about-me-content ul>li {
+.section-about-me-content ul > li {
   padding: 1rem 2rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
@@ -221,14 +223,17 @@ header .header-profile>.avatar-img {
 }
 
 /* section projects */
-
-.section-projects>ul li {
-  display: grid;
-  grid-template-columns: 1fr 40%;
-  column-gap: 50px;
-  margin-bottom: 2px;
+.section-projects ul {
+  margin-top: 100px;
 }
 
+.section-projects > ul li {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin-bottom: 2px;
+}
 .section-projects .project-content {
   display: flex;
   row-gap: 30px;
@@ -237,37 +242,27 @@ header .header-profile>.avatar-img {
   justify-content: center;
 }
 
-.section-projects ul {
-  margin-top: 100px;
-}
-
-.section-projects ul li+li {
+.section-projects ul li + li {
   margin-top: 50px;
 }
 
-
 /* section contact */
-
 .section-contact {
-  background: linear-gradient(to right,
-      rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)),
-    url(../assets/common-bg.svg);
+  background: linear-gradient(to right, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0.8)), url(../assets/common-bg.svg);
   background-position: center;
   display: flex;
   flex-direction: column;
 }
 
-.section-contact>h2,
-.section-contact>.subtitle {
+.section-contact > h2,
+.section-contact .subtitle {
   color: #fff;
 }
-
-.section-contact>h2::after {
+.section-contact > h2::after {
   background: #fff;
 }
 
-.section-contact>form {
+.section-contact > form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: white;
   padding: 3rem;
@@ -279,11 +274,10 @@ header .header-profile>.avatar-img {
   margin-top: 5rem;
 }
 
-form>div {
+form > div {
   display: flex;
   flex-direction: column;
 }
-
 form label {
   color: #666;
   font-size: 1rem;
@@ -291,11 +285,14 @@ form label {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+form button {
+  align-self: flex-end;
+}
 
 form input,
 textarea {
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 1.6rem;
   border: 1px solid #ebebeb;
   letter-spacing: 0px;
@@ -304,38 +301,29 @@ textarea {
   font-weight: 600;
 }
 
-form button {
-  align-self: flex-end;
-}
-
 /* footer */
-
 footer {
   background: #000;
   color: #fff;
-  padding: 0px 8%;
+  padding: 0px 6rem;
 }
 
-footer>.footer-top {
+.footer-top {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
-
+.footer-top .footer-top-content {
+  width: 40%;
+}
 .footer-top h4 {
   margin-bottom: 1.6rem;
 }
-
-.footer-top>div:first-child {
-  width: 40%;
-}
-
 .footer-top p {
   color: #eee;
   font-size: 0.9rem;
   line-height: 1.7;
 }
-
 .footer-top i {
   font-size: 1.6rem;
   padding: 0rem 5px;
@@ -348,95 +336,75 @@ footer>.footer-top {
   padding: 2.6rem 0;
   font-size: 0.7rem;
 }
+.footer-bottom strong {
+  text-decoration: underline;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .section {
+    padding: 10rem 1.4rem;
+  }
   .subtitle {
-    font-size: 1.2rem;
     margin: 0px 0px;
   }
-
-  .paragraph {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 2.1rem;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-  }
-
-  h3 {
-    font-size: 1.6rem;
-  }
-
-  h4 {
-    font-size: 1.0rem;
-  }
-
-  header>nav {
+  header nav {
     display: none;
   }
-
+  header {
+    padding: 0px 2rem;
+  }
   header .fa {
     display: block;
     font-size: 1.8rem;
-    padding: 30px 20px;
+    padding: 2.2rem 1rem;
     align-self: center;
     cursor: pointer;
   }
-
-  .section-home>p {
+  .section-home p {
     margin: 0px;
-    font-size: 1.2rem;
   }
-
   .section-about-me-content {
     /* Change number of columns */
     grid-template-columns: 1fr;
     row-gap: 60px;
   }
-
-  .section-projects>ul li {
+  .section-projects ul li {
     /* Change number of columns */
     grid-template-columns: 1fr;
     row-gap: 1.6rem;
   }
-
   .section-projects .project-content {
     /* Center objects */
     display: flex;
     align-items: center;
     text-align: center;
   }
-
-  .section-contact>form {
+  .section-contact form {
     padding: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
   }
-
   .section-contact input,
-  textarea {
+  .section-contact textarea {
     color: #333;
-    font-size: 0.8rem;
   }
-
-  form button {
+  .section-contact button {
     align-self: stretch;
+    font-size: 0.9rem;
   }
-
-  footer>.footer-top {
+  footer {
+    padding: 0px 1.6rem;
+  }
+  footer .footer-top {
     display: flex;
     flex-direction: column-reverse;
     gap: 50px;
   }
-
-  .footer-top>div:first-child {
+  .footer-top > div:first-child {
     width: auto;
   }
-
-
-}
+}/*# sourceMappingURL=index.css.map */

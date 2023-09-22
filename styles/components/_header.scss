@@ -1,0 +1,55 @@
+@use "../theme";
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 3rem;
+  font-weight: 700;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+
+header {
+  .fa {
+    display: none;
+  }
+}
+
+nav {
+  > ul {
+    display: flex;
+  }
+}
+
+nav {
+  > ul a {
+    display: block;
+    padding: 2rem 1.8rem;
+    transition: color 0.2s;
+    text-transform: uppercase;
+
+    &:hover {
+      color: theme.$primary-color;
+    }
+  }
+}
+
+.header-profile-container {
+  display: flex;
+  align-items: center;
+
+  .avatar-img {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+  }
+
+  > span {
+    text-transform: uppercase;
+  }
+}
