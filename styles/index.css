@@ -32,7 +32,7 @@ body {
 }
 
 .btn {
-  background: purple;
+  background: #3a1078;
   color: #fff;
   padding: 1.2rem 3.2rem;
   font-size: 0.8rem;
@@ -95,7 +95,7 @@ h2::after {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 2rem;
-  background: purple;
+  background: #3a1078;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -139,7 +139,7 @@ nav > ul a {
   text-transform: uppercase;
 }
 nav > ul a:hover {
-  color: purple;
+  color: #3a1078;
 }
 
 .header-profile-container {
@@ -159,7 +159,7 @@ nav > ul a:hover {
 
 /* section home */
 .section-home {
-  background: linear-gradient(to right, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0.8)), url(../assets/common-bg.svg);
+  background: linear-gradient(to right, rgba(58, 16, 120, 0.8), rgba(58, 16, 120, 0.8)), url(../assets/common-bg.svg);
   background-position: center;
   padding-top: 16.5rem !important;
   padding-bottom: 12rem !important;
@@ -248,7 +248,7 @@ nav > ul a:hover {
 
 /* section contact */
 .section-contact {
-  background: linear-gradient(to right, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0.8)), url(../assets/common-bg.svg);
+  background: linear-gradient(to right, rgba(58, 16, 120, 0.8), rgba(58, 16, 120, 0.8)), url(../assets/common-bg.svg);
   background-position: center;
   display: flex;
   flex-direction: column;
