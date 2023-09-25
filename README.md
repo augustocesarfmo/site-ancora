@@ -1,1 +1,38 @@
-# site-ancora
+# Site de portfólio
+
+O objetivo deste projeto foi criar um site de portfólio demonstrativo, visando aprimorar os seguintes conceitos: a) Utilização de tags semânticas HTML; b) Implementação do CSS Grid; c) Aplicação do CSS Flexbox; d) Utilização de Media Queries para responsividade. Além disso, o recurso Sass foi empregado para modularização, refatoração do código e definição de variáveis globais relacionadas ao tema da aplicação.
+
+## 👀 Demo
+Para experimentar o projeto em ação, acesse a versão de demonstração [clicando aqui](https://augustocesarfmo.github.io/site-ancora/).
+
+<img src="https://raw.githubusercontent.com/augustocesarfmo/site-ancora/main/assets/app-screenshot.png" width="100%">
+
+## 🚀 Tecnologias
+
+Este projeto foi desenvolvido para portfólio com as seguintes tecnologias:
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML "HTML5")
+- [CSS Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids "CSS Grid")
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox "CSS Flexbox")
+- [Media Queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
+- [Sass](https://sass-lang.com/guide/)
+
+## ℹ️ Executando
+
+Para clonar e executar este projeto, execute na sua linha de comando:
+
+```bash
+# Clonando este repositório
+$ git clone https://github.com/augustocesarfmo/site-ancora.git
+
+# Acessando o repositório
+$ cd site-ancora
+```
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Consulte a [LICENÇA](https://github.com/augustocesarfmo/site-ancora/blob/main/LICENSE.md) para obter mais informações.
+
+---
+
+by Augusto César Oliveira 👐🏼
