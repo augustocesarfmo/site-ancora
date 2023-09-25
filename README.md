@@ -1,6 +1,6 @@
 # Site de portfólio
 
-O objetivo deste projeto foi criar um site de portfólio demonstrativo, visando aprimorar os seguintes conceitos: a) Utilização de tags semânticas HTML; b) Implementação do CSS Grid; c) Aplicação do CSS Flexbox; d) Utilização de Media Queries para responsividade. Além disso, o recurso Sass foi empregado para modularização, refatoração do código e definição de variáveis globais relacionadas ao tema da aplicação.
+Este projeto teve como objetivo a construção de um site de portfólio demonstrativo, visando aprimorar os seguintes conceitos: a) Tags semânticas HTML; b) CSS Grid; c) CSS Flexbox; d) Media Queries para responsividade. Além disso, o recurso Sass foi utilizado para modularização, refatoração do código e definição de variáveis globais relacionadas ao tema da aplicação.
 
 ## 👀 Demo
 Para experimentar o projeto em ação, acesse a versão de demonstração [clicando aqui](https://augustocesarfmo.github.io/site-ancora/).
