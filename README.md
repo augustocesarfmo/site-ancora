@@ -19,7 +19,9 @@ Este projeto foi desenvolvido para portfólio com as seguintes tecnologias:
 
 ## ℹ️ Executando
 
-Para clonar e executar este projeto, execute na sua linha de comando:
+Para clonar e executar este projeto, você precisará de [Git](https://git-scm.com) instalado no seu computador.
+
+Na sua linha de comando execute:
 
 ```bash
 # Clonando este repositório
@@ -27,6 +29,9 @@ $ git clone https://github.com/augustocesarfmo/site-ancora.git
 
 # Acessando o repositório
 $ cd site-ancora
+
+# Executando o projeto
+$ Live Server
 ```
 
 ## 📝 Licença
