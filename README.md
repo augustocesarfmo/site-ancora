@@ -29,9 +29,6 @@ $ git clone https://github.com/augustocesarfmo/site-ancora.git
 
 # Acessando o repositório
 $ cd site-ancora
-
-# Executando o projeto
-$ Live Server
 ```
 
 ## 📝 Licença
