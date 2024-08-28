@@ -15,7 +15,7 @@ Este projeto foi desenvolvido para portfólio com as seguintes tecnologias:
 - [CSS Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids "CSS Grid")
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox "CSS Flexbox")
 - [Media Queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
-- [Sass](https://sass-lang.com/guide/)
+- [sass](https://sass-lang.com/guide/)
 
 ## ℹ️ Executando
 
