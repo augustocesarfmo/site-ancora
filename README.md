@@ -19,7 +19,7 @@ Este projeto foi desenvolvido para portfólio com as seguintes tecnologias:
 
 ## ℹ️ Executando
 
-Para clonar e executar este projeto, você precisará de [Git](https://git-scm.com) instalado no seu computador.
+Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com) instalado no seu computador.
 
 Na sua linha de comando execute:
 
